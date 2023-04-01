@@ -26,4 +26,4 @@ if __name__ == '__main__':
     with open('question.txt', 'r') as f:
         question = f.read()
     message = asyncio.run(ask(question))
-    send_telegram_message(token, chat_id, message)
+    print(send_telegram_message(token, chat_id, message))

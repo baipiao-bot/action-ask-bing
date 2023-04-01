@@ -1,0 +1,33 @@
+name: Ask
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Write cookies to file     
+      env:
+        COOKIES: ${{ secrets.COOKIES }}
+      run: echo $COOKIES > cookies.json
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+        
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+      
+    - name: Execute app.py
+      run: |
+        python app.py
+

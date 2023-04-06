@@ -1,0 +1,413 @@
+{
+    "type": 2,
+    "invocationId": "2",
+    "item": {
+        "messages": [
+            {
+                "text": "List some methods of making money",
+                "author": "user",
+                "from": {
+                    "id": "1688852494034579",
+                    "name": null
+                },
+                "createdAt": "2023-04-06T07:33:49.6245367+00:00",
+                "timestamp": "2023-04-06T14:35:57+08:00",
+                "locale": "zh-CN",
+                "market": "zh-US",
+                "region": "US",
+                "location": "lat:47.639557;long:-122.128159;re=1000m;",
+                "locationHints": [
+                    {
+                        "country": "United States",
+                        "countryConfidence": 8,
+                        "state": "California",
+                        "city": "San Jose",
+                        "cityConfidence": 5,
+                        "zipCode": "95110",
+                        "timeZoneOffset": -8,
+                        "dma": 807,
+                        "sourceType": 1,
+                        "center": {
+                            "latitude": 37.3396,
+                            "longitude": -121.899,
+                            "height": null
+                        },
+                        "regionType": 2
+                    }
+                ],
+                "messageId": "4f5482ee-e70d-4501-9224-54f627259b41",
+                "requestId": "4f5482ee-e70d-4501-9224-54f627259b41",
+                "nlu": {
+                    "scoredClassification": {
+                        "classification": "CHAT_GPT",
+                        "score": null
+                    },
+                    "classificationRanking": [
+                        {
+                            "classification": "CHAT_GPT",
+                            "score": null
+                        }
+                    ],
+                    "qualifyingClassifications": null,
+                    "ood": null,
+                    "metaData": null,
+                    "entities": null
+                },
+                "offense": "None",
+                "feedback": {
+                    "tag": null,
+                    "updatedOn": null,
+                    "type": "None"
+                },
+                "contentOrigin": "cib",
+                "privacy": null,
+                "inputMethod": "Keyboard"
+            },
+            {
+                "text": "Searching the web for: `如何赚钱`",
+                "hiddenText": "如何赚钱",
+                "author": "bot",
+                "createdAt": "2023-04-06T07:33:55.2154487+00:00",
+                "timestamp": "2023-04-06T07:33:55.2154487+00:00",
+                "messageId": "e4ecec0d-3d39-439c-bd5f-1b6b5a03d141",
+                "requestId": "4f5482ee-e70d-4501-9224-54f627259b41",
+                "messageType": "InternalSearchQuery",
+                "offense": "None",
+                "adaptiveCards": [
+                    {
+                        "type": "AdaptiveCard",
+                        "version": "1.0",
+                        "body": [
+                            {
+                                "type": "RichTextBlock",
+                                "inlines": [
+                                    {
+                                        "type": "TextRun",
+                                        "isSubtle": true,
+                                        "italic": true,
+                                        "text": "Searching the web for: `如何赚钱`"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "feedback": {
+                    "tag": null,
+                    "updatedOn": null,
+                    "type": "None"
+                },
+                "contentOrigin": "DeepLeo",
+                "privacy": null
+            },
+            {
+                "hiddenText": "```json\n{\"web_search_results\":[{\"index\":\"1\",\"title\":\"如何赚钱发财的23种方法-百度经验\",\"snippets\":[\"你要以写作、绘画或作曲变成百万富翁的机会可以说是无限小，而你要在营造业、房地产、制造业发大财的机会比较大。\"],\"data\":{\"Date\":\"2020-6-12 00:00:00\"},\"url\":\"https://jingyan.baidu.com/article/22a299b50356ebdf19376aba.html\"},{\"index\":\"2\",\"title\":\"当前这个时代如何赚钱最快？ - 知乎\",\"snippets\":[\"赚钱的渠道有很多，打工也能赚钱，做自由职业者也能赚钱，开公司也能赚钱，投资也能赚钱。\"],\"url\":\"https://www.zhihu.com/question/30858807\"},{\"index\":\"3\",\"title\":\"有哪些业余赚钱的途径？ - 知乎\",\"snippets\":[\"1、 做百度知道合伙人 打开百度搜索“百度知道合伙人”，然后入驻 这个工作也就是回答百度知道的问题，回答一篇给你3元钱，熟练之后，基本10分钟就可以做一个回答。 所以一个月赚个1000-2000还是可能的， 如果你想赚的更多一点，你可以入驻的时候选择团队，然后推广别人加入你的团队，这样你的队员回答问题，你也会有收益。 注：很多人找不到百度知道合伙人，打开电脑，浏览器搜索百度知道合伙人，手机是不行的！ 2、做自媒体 自媒体的平台很多，赚的比价多的是百度百家，头条号也可以，还有大鱼号、企鹅号、一点咨询、搜狐自媒体、网易自媒体等等 每天可以写一篇文章，然后发表到各个自媒体平台，这样就都会有收益。 用简媒这个工具，可以一键同步。\"],\"url\":\"https://www.zhihu.com/question/27182640\"},{\"index\":\"4\",\"title\":\"如何利用ChatGPT赚钱（一） - 知乎 - 知乎专栏\",\"snippets\":[\"总结来说，用ChatGPT赚钱的方法有很多，不仅仅是上面提到的做自媒体、做剪辑 而掌握ChatGPT一定会是我们以后的必修课。同时也希望上面这些方法能帮助到你或者给到你启发。 在实践这些方法的过程中，你可能会遇到困难或者有所疑惑。\"],\"url\":\"https://zhuanlan.zhihu.com/p/618338863\"},{\"index\":\"5\",\"title\":\"常见的20种网络赚钱方法 - 知乎 - 知乎专栏\",\"snippets\":[\"其中一些是快速赚钱的方式，而其余的都是赚钱的长远思路。 网赚方法一：参与联盟计划赚取产品佣金 参与联盟计划赚钱在联盟计划中，你卖别人的产品赚取佣金。 你可以通过像ClickBank，LinkShare，ShareASale和PayDotcom这样的网站找到像电子书，主题及课程之类的数码产品。 网赚方法二：在线卖照片赚钱 在线卖照片赚钱如果你可以上传有趣，高品质的照片，你就可以在如iStockPhotos这样的摄影网站卖图片，当有人下载你的照片时，你就开始收钱。 假设你能上传一张好的照片，不停的卖出，你就可以好好赚一笔。 想象一下，当你在摄影网站图片放上数百张图像，你的盈利潜力该有多大。 网赚方法三：在线共享文件赚钱\"],\"url\":\"https://zhuanlan.zhihu.com/p/27134489\"}]}\n```",
+                "author": "bot",
+                "createdAt": "2023-04-06T07:33:55.4935212+00:00",
+                "timestamp": "2023-04-06T07:33:55.4935212+00:00",
+                "messageId": "b243a0a6-7fab-40b3-a81c-f518666d85bf",
+                "requestId": "4f5482ee-e70d-4501-9224-54f627259b41",
+                "messageType": "InternalSearchResult",
+                "offense": "None",
+                "adaptiveCards": [
+                    {
+                        "type": "AdaptiveCard",
+                        "version": "1.0",
+                        "body": [
+                            {
+                                "type": "RichTextBlock",
+                                "inlines": [
+                                    {
+                                        "type": "TextRun",
+                                        "isSubtle": true,
+                                        "italic": true,
+                                        "text": "```json\n{\"web_search_results\":[{\"index\":\"1\",\"title\":\"如何赚钱发财的23种方法-百度经验\",\"snippets\":[\"你要以写作、绘画或作曲变成百万富翁的机会可以说是无限小，而你要在营造业、房地产、制造业发大财的机会比较大。\"],\"data\":{\"Date\":\"2020-6-12 00:00:00\"},\"url\":\"https://jingyan.baidu.com/article/22a299b50356ebdf19376aba.html\"},{\"index\":\"2\",\"title\":\"当前这个时代如何赚钱最快？ - 知乎\",\"snippets\":[\"赚钱的渠道有很多，打工也能赚钱，做自由职业者也能赚钱，开公司也能赚钱，投资也能赚钱。\"],\"url\":\"https://www.zhihu.com/question/30858807\"},{\"index\":\"3\",\"title\":\"有哪些业余赚钱的途径？ - 知乎\",\"snippets\":[\"1、 做百度知道合伙人 打开百度搜索“百度知道合伙人”，然后入驻 这个工作也就是回答百度知道的问题，回答一篇给你3元钱，熟练之后，基本10分钟就可以做一个回答。 所以一个月赚个1000-2000还是可能的， 如果你想赚的更多一点，你可以入驻的时候选择团队，然后推广别人加入你的团队，这样你的队员回答问题，你也会有收益。 注：很多人找不到百度知道合伙人，打开电脑，浏览器搜索百度知道合伙人，手机是不行的！ 2、做自媒体 自媒体的平台很多，赚的比价多的是百度百家，头条号也可以，还有大鱼号、企鹅号、一点咨询、搜狐自媒体、网易自媒体等等 每天可以写一篇文章，然后发表到各个自媒体平台，这样就都会有收益。 用简媒这个工具，可以一键同步。\"],\"url\":\"https://www.zhihu.com/question/27182640\"},{\"index\":\"4\",\"title\":\"如何利用ChatGPT赚钱（一） - 知乎 - 知乎专栏\",\"snippets\":[\"总结来说，用ChatGPT赚钱的方法有很多，不仅仅是上面提到的做自媒体、做剪辑 而掌握ChatGPT一定会是我们以后的必修课。同时也希望上面这些方法能帮助到你或者给到你启发。 在实践这些方法的过程中，你可能会遇到困难或者有所疑惑。\"],\"url\":\"https://zhuanlan.zhihu.com/p/618338863\"},{\"index\":\"5\",\"title\":\"常见的20种网络赚钱方法 - 知乎 - 知乎专栏\",\"snippets\":[\"其中一些是快速赚钱的方式，而其余的都是赚钱的长远思路。 网赚方法一：参与联盟计划赚取产品佣金 参与联盟计划赚钱在联盟计划中，你卖别人的产品赚取佣金。 你可以通过像ClickBank，LinkShare，ShareASale和PayDotcom这样的网站找到像电子书，主题及课程之类的数码产品。 网赚方法二：在线卖照片赚钱 在线卖照片赚钱如果你可以上传有趣，高品质的照片，你就可以在如iStockPhotos这样的摄影网站卖图片，当有人下载你的照片时，你就开始收钱。 假设你能上传一张好的照片，不停的卖出，你就可以好好赚一笔。 想象一下，当你在摄影网站图片放上数百张图像，你的盈利潜力该有多大。 网赚方法三：在线共享文件赚钱\"],\"url\":\"https://zhuanlan.zhihu.com/p/27134489\"}]}\n```"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "feedback": {
+                    "tag": null,
+                    "updatedOn": null,
+                    "type": "None"
+                },
+                "contentOrigin": "DeepLeo",
+                "privacy": null,
+                "groundingInfo": {
+                    "web_search_results": [
+                        {
+                            "index": "1",
+                            "title": "如何赚钱发财的23种方法-百度经验",
+                            "snippets": [
+                                "你要以写作、绘画或作曲变成百万富翁的机会可以说是无限小，而你要在营造业、房地产、制造业发大财的机会比较大。"
+                            ],
+                            "data": {
+                                "Date": "2020-6-12 00:00:00"
+                            },
+                            "context": null,
+                            "url": "https://jingyan.baidu.com/article/22a299b50356ebdf19376aba.html",
+                            "lastUpdatedDate": null
+                        },
+                        {
+                            "index": "2",
+                            "title": "当前这个时代如何赚钱最快？ - 知乎",
+                            "snippets": [
+                                "赚钱的渠道有很多，打工也能赚钱，做自由职业者也能赚钱，开公司也能赚钱，投资也能赚钱。"
+                            ],
+                            "data": null,
+                            "context": null,
+                            "url": "https://www.zhihu.com/question/30858807",
+                            "lastUpdatedDate": null
+                        },
+                        {
+                            "index": "3",
+                            "title": "有哪些业余赚钱的途径？ - 知乎",
+                            "snippets": [
+                                "1、 做百度知道合伙人 打开百度搜索“百度知道合伙人”，然后入驻 这个工作也就是回答百度知道的问题，回答一篇给你3元钱，熟练之后，基本10分钟就可以做一个回答。 所以一个月赚个1000-2000还是可能的， 如果你想赚的更多一点，你可以入驻的时候选择团队，然后推广别人加入你的团队，这样你的队员回答问题，你也会有收益。 注：很多人找不到百度知道合伙人，打开电脑，浏览器搜索百度知道合伙人，手机是不行的！ 2、做自媒体 自媒体的平台很多，赚的比价多的是百度百家，头条号也可以，还有大鱼号、企鹅号、一点咨询、搜狐自媒体、网易自媒体等等 每天可以写一篇文章，然后发表到各个自媒体平台，这样就都会有收益。 用简媒这个工具，可以一键同步。"
+                            ],
+                            "data": null,
+                            "context": null,
+                            "url": "https://www.zhihu.com/question/27182640",
+                            "lastUpdatedDate": null
+                        },
+                        {
+                            "index": "4",
+                            "title": "如何利用ChatGPT赚钱（一） - 知乎 - 知乎专栏",
+                            "snippets": [
+                                "总结来说，用ChatGPT赚钱的方法有很多，不仅仅是上面提到的做自媒体、做剪辑 而掌握ChatGPT一定会是我们以后的必修课。同时也希望上面这些方法能帮助到你或者给到你启发。 在实践这些方法的过程中，你可能会遇到困难或者有所疑惑。"
+                            ],
+                            "data": null,
+                            "context": null,
+                            "url": "https://zhuanlan.zhihu.com/p/618338863",
+                            "lastUpdatedDate": null
+                        },
+                        {
+                            "index": "5",
+                            "title": "常见的20种网络赚钱方法 - 知乎 - 知乎专栏",
+                            "snippets": [
+                                "其中一些是快速赚钱的方式，而其余的都是赚钱的长远思路。 网赚方法一：参与联盟计划赚取产品佣金 参与联盟计划赚钱在联盟计划中，你卖别人的产品赚取佣金。 你可以通过像ClickBank，LinkShare，ShareASale和PayDotcom这样的网站找到像电子书，主题及课程之类的数码产品。 网赚方法二：在线卖照片赚钱 在线卖照片赚钱如果你可以上传有趣，高品质的照片，你就可以在如iStockPhotos这样的摄影网站卖图片，当有人下载你的照片时，你就开始收钱。 假设你能上传一张好的照片，不停的卖出，你就可以好好赚一笔。 想象一下，当你在摄影网站图片放上数百张图像，你的盈利潜力该有多大。 网赚方法三：在线共享文件赚钱"
+                            ],
+                            "data": null,
+                            "context": null,
+                            "url": "https://zhuanlan.zhihu.com/p/27134489",
+                            "lastUpdatedDate": null
+                        }
+                    ]
+                }
+            },
+            {
+                "text": "Generating answers for you...",
+                "hiddenText": "Generating answers for you...",
+                "author": "bot",
+                "createdAt": "2023-04-06T07:34:00.7617665+00:00",
+                "timestamp": "2023-04-06T07:34:00.7617665+00:00",
+                "messageId": "1a272277-800b-40d3-aa1e-a3cf9ddbc16c",
+                "requestId": "4f5482ee-e70d-4501-9224-54f627259b41",
+                "messageType": "InternalLoaderMessage",
+                "offense": "None",
+                "adaptiveCards": [
+                    {
+                        "type": "AdaptiveCard",
+                        "version": "1.0",
+                        "body": [
+                            {
+                                "type": "RichTextBlock",
+                                "inlines": [
+                                    {
+                                        "type": "TextRun",
+                                        "isSubtle": true,
+                                        "italic": true,
+                                        "text": "Generating answers for you..."
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "feedback": {
+                    "tag": null,
+                    "updatedOn": null,
+                    "type": "None"
+                },
+                "contentOrigin": "DeepLeo",
+                "privacy": null
+            },
+            {
+                "text": "以下是一些赚钱的方法：\n\n1. 在营造业、房地产、制造业等行业发大财的机会比较大[^1^]。\n2. 打工、做自由职业者、开公司、投资等都是赚钱的渠道[^2^]。\n3. 做百度知道合伙人，回答百度知道的问题，回答一篇给你3元钱，熟练之后，基本10分钟就可以做一个回答。所以一个月赚个1000-2000还是可能的[^3^]。\n4. 做自媒体，每天可以写一篇文章，然后发表到各个自媒体平台，这样就都会有收益[^3^]。\n5. 在线卖照片赚钱。如果你可以上传有趣，高品质的照片，你就可以在摄影网站卖图片，当有人下载你的照片时，你就开始收钱[^5^]。\n\n希望这些信息能对你有所帮助！",
+                "author": "bot",
+                "createdAt": "2023-04-06T07:34:00.7618847+00:00",
+                "timestamp": "2023-04-06T07:34:00.7618847+00:00",
+                "messageId": "fe53cb18-2616-487c-be4d-019436d22585",
+                "requestId": "4f5482ee-e70d-4501-9224-54f627259b41",
+                "offense": "None",
+                "adaptiveCards": [
+                    {
+                        "type": "AdaptiveCard",
+                        "version": "1.0",
+                        "body": [
+                            {
+                                "type": "TextBlock",
+                                "text": "[1]: https://jingyan.baidu.com/article/22a299b50356ebdf19376aba.html \"如何赚钱发财的23种方法-百度经验\"\n[2]: https://www.zhihu.com/question/30858807 \"当前这个时代如何赚钱最快？ - 知乎\"\n[3]: https://www.zhihu.com/question/27182640 \"有哪些业余赚钱的途径？ - 知乎\"\n[4]: https://zhuanlan.zhihu.com/p/618338863 \"如何利用ChatGPT赚钱（一） - 知乎 - 知乎专栏\"\n[5]: https://zhuanlan.zhihu.com/p/27134489 \"常见的20种网络赚钱方法 - 知乎 - 知乎专栏\"\n\n以下是一些赚钱的方法：\n\n1. 在营造业、房地产、制造业等行业发大财的机会比较大[^1^][1]。\n2. 打工、做自由职业者、开公司、投资等都是赚钱的渠道[^2^][2]。\n3. 做百度知道合伙人，回答百度知道的问题，回答一篇给你3元钱，熟练之后，基本10分钟就可以做一个回答。所以一个月赚个1000-2000还是可能的[^3^][3]。\n4. 做自媒体，每天可以写一篇文章，然后发表到各个自媒体平台，这样就都会有收益[^3^][3]。\n5. 在线卖照片赚钱。如果你可以上传有趣，高品质的照片，你就可以在摄影网站卖图片，当有人下载你的照片时，你就开始收钱[^4^][5]。\n\n希望这些信息能对你有所帮助！\n",
+                                "wrap": true
+                            },
+                            {
+                                "type": "TextBlock",
+                                "size": "small",
+                                "text": "Learn more: [1. jingyan.baidu.com](https://jingyan.baidu.com/article/22a299b50356ebdf19376aba.html) [2. www.zhihu.com](https://www.zhihu.com/question/30858807) [3. www.zhihu.com](https://www.zhihu.com/question/27182640) [4. zhuanlan.zhihu.com](https://zhuanlan.zhihu.com/p/27134489) [5. zhuanlan.zhihu.com](https://zhuanlan.zhihu.com/p/618338863)",
+                                "wrap": true
+                            }
+                        ]
+                    }
+                ],
+                "sourceAttributions": [
+                    {
+                        "providerDisplayName": "如何赚钱发财的23种方法-百度经验",
+                        "seeMoreUrl": "https://jingyan.baidu.com/article/22a299b50356ebdf19376aba.html",
+                        "searchQuery": "如何赚钱"
+                    },
+                    {
+                        "providerDisplayName": "当前这个时代如何赚钱最快？ - 知乎",
+                        "seeMoreUrl": "https://www.zhihu.com/question/30858807",
+                        "searchQuery": "如何赚钱"
+                    },
+                    {
+                        "providerDisplayName": "有哪些业余赚钱的途径？ - 知乎",
+                        "seeMoreUrl": "https://www.zhihu.com/question/27182640",
+                        "imageLink": "https://bing.com/th?id=OIP.zGWDV8YkJqv0T1JQHOI8HwHaNP&pid=cdx",
+                        "imageWidth": "1075",
+                        "imageHeight": "1921",
+                        "imageFavicon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAZXSURBVFhHjZfbblw1FIbtN0jfYOcN4A3mEfoG3ZVoWkppp/SQnkKm5zNMz5S2JDQ0hbY0UJAQCDQIBAhxyBUIEFAQSNxAcgXc7c33L3vt2RkQiqV/bC9727/XyZ6wovSqdeFQNQhHqmVQheN1HU9Qn6rrcAacpf8s/T71eXAR2SVwBTxH/ypj16ivU7+AbAa8SH+O+iVwi7Xn2eNfZboeC1PVIE7z4UEmHuajw7SPUovESWQicZr2GeTP0BaJc7QvABG5DCARrgJIhOvgBnMgEUXiJn0RuQVuV4uQG8u7hxD3IjjApKerKvaYAIl4SKB/jP5R6uPgJDjFhmginKWWNs7RPk8tTVymljZE4nkAiXgDmWsCEnGOvkjMow0rk3UZ9yLYx6CRoC0SQCSkDZnDiJwAaCKiCSORNWEkLgBIxEttEnx3DaAJIzHLeFsTMkfcDZNJOpCI+/h4P+0pMA2cxBGAOUwTx5iDSUwT+EU0TVD3qSERL1K3/EKaiC1zOInkF9LCTjq76IjEHtpook2i+1ZdL/9d14XU7ETwi4BJkk/QljZEAk3IOc0npA1MEq8wTyTknNKEOScyTBLmcPbwFAOQCCKxm/YeBvfyISTKV2sri78xJueUX8gxZY6siYBfeISIxNA5qWWOxjlpO4mWX4SwHeF2BDvoZBKmCUgsfJ0I9D+p6w6sO3xguEmbsOpgR0XIGk7eeQXcAXfBPQD5zn2wAF4DD1jX/cJMkkmErfx0AUTCDoSZRIHDraaUbyaspgTMEdsRInPELQi3snFDAuysqpITqcj+gx/r+uFyq/9wiPKNul4PmrGfwS8r4aUJ1eycli/CZgg8CRs0EZ0EfjH4Pn3U/xA5ftF7N/VnFhknVIf5ArKoV0WbN0lLfkGYFtjci2dOOWdDIjzOz2awBUAkbMNeTFR5uMQCyoRESEPgS+aQL0TC8gUkytfT2OAn5ipXZBKKkIJTerH07fnCSYSNdCARpQnMIRJr+ah7v6rWkBc8QnrvpEVmvqBPhMQDzM0k1uNkKiJgYaoIgYgyZ8EpvVjSUpiKhKVv5oUJGpnEqCbMLzCH/KL3dlpk5nP6SlrKFVkTJZ6uYgRauUJJq+CUXixMSd8pX7C5SEQRyCTMHMITTBCJlnM2BD6jj0lS+mZc+YJwUzEC+Q6xi4zMOc4p0yhjp5ErfYuIk9DmIhEn6IjIJuzGyQbf4QO/gz8Slv9Ki8jT5RsGIkM+4QlLUeHOaXcIN2qBvb3YHYJfRCeh9D1KQHX/vfzFKoqIlPfSKY2AIqR1rRfZoVUUITE7Z0PCNx8SqOsx1D6Oeov9gDuhYNHFX9Mia3WpjGTO9XcyAfKF3SFyTu4RESlwOi/mF4oQe+Sw5xnqRvUZjU8YmLSJcZzTTfAoHzf5AhKxlbREQM4ZRWKK7yAxjprTKHL5hUjoIpMmdI+MEhCMxIYsxzk7XLlaQCQKFu2/jxwSronyZVs/aSA7p78tCtTsxfzCSXi+aDZmQzOHokG1EwCzH6cF3DFVuni+R0h5O8kGP9Cf5DuFKZeZwnQcNadRxvS2yCSCP3AaAiNw3xgnDefv65KbsHu3rQ022YYJ5m3Y0rf8gkdOpRtVr6wCz/diD5weBz3IuOcLV3XaEMEGbyf57EfpY528kHrR0ODbJJNGlC9KruV26fAaWvgqd1rF75AUJRARiXTitNkoSu5rL9MP+CCTHedky38muSKk5G2wmhJI382bM5MwDdjJR/AI9vJNdHrJTCuZRDd7/pjC0dM3N6pHS/8DHipEQ9zFfJmj7ZxEiCUsYbgwHW3OBiUPR9988I1UnzZNc9Mc1TKPMmfUHaL0zWU2+2m6TYdvC+R6Zdmbk3Xym1Mk7OGLWpcaDeSFO7zvpP6O7nSX5zHvD+fThkRzh9iNCrjMPEyjvbSAiJgmkJHkLF9g/4E7ni06Cm3mG4LReepb6PplBgmZxB44REjoslG+URsSZhLa+/Qs38Cfg2ax/9gon7xtf3NGkwOXaa6T8Gtd7818rZs2Vry+qffk/4ksMvCFVmz+P2gSVou0QfKcvk0TMok/fBtNgEn+DjZlHX8UJxC0SKxoZ/iJjaCZLbeb8VwbCdAyyfD1zbo7Uf221p/TpjxWl8knhpuvShuZiBNzWdiIfBghSzxwBvhE6+95CP8A6v7GFtNHJ/MAAAAASUVORK5CYII=",
+                        "searchQuery": "如何赚钱"
+                    },
+                    {
+                        "providerDisplayName": "常见的20种网络赚钱方法 - 知乎 - 知乎专栏",
+                        "seeMoreUrl": "https://zhuanlan.zhihu.com/p/27134489",
+                        "imageLink": "https://bing.com/th?id=OIP.5zO_XPfcp8_DTnZ38xouDgHaJB&pid=cdx",
+                        "imageWidth": "720",
+                        "imageHeight": "877",
+                        "imageFavicon": "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",
+                        "searchQuery": "如何赚钱"
+                    },
+                    {
+                        "providerDisplayName": "如何利用ChatGPT赚钱（一） - 知乎 - 知乎专栏",
+                        "seeMoreUrl": "https://zhuanlan.zhihu.com/p/618338863",
+                        "searchQuery": "如何赚钱"
+                    }
+                ],
+                "feedback": {
+                    "tag": null,
+                    "updatedOn": null,
+                    "type": "None"
+                },
+                "contentOrigin": "DeepLeo",
+                "privacy": null,
+                "suggestedResponses": [
+                    {
+                        "text": "Tell me more about making money through self-employment.",
+                        "author": "user",
+                        "createdAt": "2023-04-06T07:34:10.9331215+00:00",
+                        "timestamp": "2023-04-06T07:34:10.9331215+00:00",
+                        "messageId": "4be33b45-5d38-472b-97da-f8175b70eb2b",
+                        "messageType": "Suggestion",
+                        "offense": "Unknown",
+                        "feedback": {
+                            "tag": null,
+                            "updatedOn": null,
+                            "type": "None"
+                        },
+                        "contentOrigin": "DeepLeo",
+                        "privacy": null
+                    },
+                    {
+                        "text": "What are some other ways to make money online?",
+                        "author": "user",
+                        "createdAt": "2023-04-06T07:34:10.9331269+00:00",
+                        "timestamp": "2023-04-06T07:34:10.9331269+00:00",
+                        "messageId": "5d0a6c85-95ce-4bfa-bf58-ff6e427e0094",
+                        "messageType": "Suggestion",
+                        "offense": "Unknown",
+                        "feedback": {
+                            "tag": null,
+                            "updatedOn": null,
+                            "type": "None"
+                        },
+                        "contentOrigin": "DeepLeo",
+                        "privacy": null
+                    },
+                    {
+                        "text": "How can I start selling photos online?",
+                        "author": "user",
+                        "createdAt": "2023-04-06T07:34:10.9331274+00:00",
+                        "timestamp": "2023-04-06T07:34:10.9331274+00:00",
+                        "messageId": "e09fd55b-47af-49df-9ebf-837a7ab232cc",
+                        "messageType": "Suggestion",
+                        "offense": "Unknown",
+                        "feedback": {
+                            "tag": null,
+                            "updatedOn": null,
+                            "type": "None"
+                        },
+                        "contentOrigin": "DeepLeo",
+                        "privacy": null
+                    }
+                ],
+                "spokenText": "希望这些信息能对你有所帮助！"
+            },
+            {
+                "text": "如何赚钱",
+                "author": "bot",
+                "createdAt": "2023-04-06T07:34:10.9506251+00:00",
+                "timestamp": "2023-04-06T07:34:10.9506251+00:00",
+                "messageId": "786da0af-f86f-453c-892e-fdad3d8acf0d",
+                "requestId": "4f5482ee-e70d-4501-9224-54f627259b41",
+                "messageType": "RenderCardRequest",
+                "offense": "None",
+                "adaptiveCards": [
+                    {
+                        "type": "AdaptiveCard",
+                        "version": "1.0",
+                        "body": [
+                            {
+                                "type": "RichTextBlock",
+                                "inlines": [
+                                    {
+                                        "type": "TextRun",
+                                        "isSubtle": true,
+                                        "italic": true,
+                                        "text": "如何赚钱"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "feedback": {
+                    "tag": null,
+                    "updatedOn": null,
+                    "type": "None"
+                },
+                "contentOrigin": "DeepLeo",
+                "privacy": null
+            }
+        ],
+        "firstNewMessageIndex": 1,
+        "conversationId": "51D|BingProd|4AB8315968A0DD88C7B3BD13976BA8392FA1F7207C0C81ECEF4CF8B10912E1E9",
+        "requestId": "4f5482ee-e70d-4501-9224-54f627259b41",
+        "conversationExpiryTime": "2023-04-06T13:34:11.0138782Z",
+        "telemetry": {
+            "metrics": null,
+            "startTime": "2023-04-06T07:33:49.6211912Z"
+        },
+        "throttling": {
+            "maxNumUserMessagesInConversation": 20,
+            "numUserMessagesInConversation": 1
+        },
+        "result": {
+            "value": "Success",
+            "message": "如何赚钱",
+            "serviceVersion": "20230405.72"
+        }
+    }
+}

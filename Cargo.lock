@@ -222,9 +222,9 @@ dependencies = [
 
 [[package]]
 name = "edge-gpt"
-version = "0.1.0"
+version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "da6c8ef9dbe3a3eefb9fccc5e02f3cacd521b6516855960b6bd2f5b58c52fccb"
+checksum = "164ab755133d9ea5d6c40269b602c2435c4b8ca93093b3052acf17609e85cb05"
 dependencies = [
  "base64 0.21.0",
  "cookie",

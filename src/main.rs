@@ -1,4 +1,4 @@
-use edge_gpt::{ChatSession, CookieInFile};
+use edge_gpt::{ChatSession, ConversationStyle, CookieInFile};
 use ezio::prelude::*;
 use isahc::AsyncReadResponseExt;
 use libaes::Cipher;
@@ -19,6 +19,8 @@ pub struct Request {
     message_id: i64,
     reply_to_message_id: Option<i64>,
     question: String,
+    #[serde(default)]
+    style: String,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -82,12 +84,24 @@ async fn main() {
         } else {
             let cookie_str = env::var("COOKIE").unwrap();
             let cookies: Vec<CookieInFile> = serde_json::from_str(&cookie_str).unwrap();
-            ChatSession::create(&cookies).await
+            let style = match request.style.as_str() {
+                "" | "creative" => ConversationStyle::Creative,
+                "balanced" => ConversationStyle::Balanced,
+                "precise" => ConversationStyle::Precise,
+                _ => panic!("style must be one of: creative, balanced, precise"),
+            };
+            ChatSession::create(style, &cookies).await
         }
     } else {
         let cookie_str = env::var("COOKIE").unwrap();
         let cookies: Vec<CookieInFile> = serde_json::from_str(&cookie_str).unwrap();
-        ChatSession::create(&cookies).await
+        let style = match request.style.as_str() {
+            "" | "creative" => ConversationStyle::Creative,
+            "balanced" => ConversationStyle::Balanced,
+            "precise" => ConversationStyle::Precise,
+            _ => panic!("style must be one of: creative, balanced, precise"),
+        };
+        ChatSession::create(style, &cookies).await
     };
     let response = chat_session.send_message(&request.question).await.unwrap();
     let telegram_response = Response::new(request.chat_id, request.message_id, response.text);

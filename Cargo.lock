@@ -4,7 +4,7 @@ version = 3
 
 [[package]]
 name = "action-ask-bing"
-version = "1.0.0"
+version = "1.0.1"
 dependencies = [
  "edge-gpt",
  "ezio",
@@ -232,9 +232,9 @@ dependencies = [
 
 [[package]]
 name = "edge-gpt"
-version = "0.2.0"
+version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "164ab755133d9ea5d6c40269b602c2435c4b8ca93093b3052acf17609e85cb05"
+checksum = "ea7a63937bdfd44ff24948126434b609e9c86837d63cae075b509dcec1848462"
 dependencies = [
  "base64 0.21.0",
  "cookie",

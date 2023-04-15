@@ -136,7 +136,7 @@ async fn main() {
                 "precise" => ConversationStyle::Precise,
                 _ => panic!("style must be one of: creative, balanced, precise"),
             };
-            ChatSession::create(style, &cookies).await
+            ChatSession::create(style, &cookies).await.unwrap()
         }
     } else {
         let cookie_str = env::var("COOKIE").unwrap();
@@ -147,7 +147,7 @@ async fn main() {
             "precise" => ConversationStyle::Precise,
             _ => panic!("style must be one of: creative, balanced, precise"),
         };
-        ChatSession::create(style, &cookies).await
+        ChatSession::create(style, &cookies).await.unwrap()
     };
 
     let (stop_typing_action_tx, mut stop_typing_action_rx) = broadcast::channel(1);
@@ -182,11 +182,18 @@ async fn main() {
         .uri(url)
         .header("Content-Type", "application/json")
         .method("POST")
-        .body(response_json)
+        .body(response_json.clone())
         .unwrap();
-    let mut send_message_response = isahc::send_async(send_message_request).await.unwrap();
+    let mut send_message_response = isahc::send_async(send_message_request)
+        .await
+        .map_err(|_err| panic!("failed to send message: {response_json}"))
+        .unwrap();
     stop_typing_action_tx.send(()).unwrap();
-    let send_message_response: SendMessageResponse = send_message_response.json().await.unwrap();
+    let send_message_response: SendMessageResponse = send_message_response
+        .json()
+        .await
+        .map_err(|_err| panic!("failed to send message: {response_json}"))
+        .unwrap();
     let key = format!(
         "{}-{}",
         request.chat_id, send_message_response.result.message_id

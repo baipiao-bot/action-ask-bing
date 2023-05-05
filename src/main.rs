@@ -14,6 +14,13 @@ fn decrypt(data: &[u8], secret: &[u8]) -> String {
     String::from_utf8(cipher.cbc_decrypt(iv, data)).unwrap()
 }
 
+pub fn escape(text: &str) -> String {
+    text.replace('\"', "\\\"")
+        .replace('{', "\\{")
+        .replace('}', "\\}")
+        .replace('_', "\\_")
+        .replace('.', "\\.")
+}
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Request {
     chat_id: i64,
@@ -86,7 +93,7 @@ impl Response {
     fn parse_answer(mut answer: NewBingResponseMessage) -> String {
         Self::fix_attributions(&mut answer);
         Self::fix_unordered_list(&mut answer);
-        answer.text
+        escape(&answer.text)
     }
 
     pub fn new(chat_id: i64, reply_to_message_id: i64, answer: NewBingResponseMessage) -> Self {

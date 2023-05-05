@@ -46,7 +46,7 @@ impl Default for Response {
             chat_id: Default::default(),
             reply_to_message_id: Default::default(),
             text: Default::default(),
-            parse_mode: "Markdown".to_string(),
+            parse_mode: "MarkdownV2".to_string(),
             disable_web_page_preview: true,
         }
     }

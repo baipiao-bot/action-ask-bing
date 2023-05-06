@@ -14,7 +14,7 @@ fn decrypt(data: &[u8], secret: &[u8]) -> String {
     String::from_utf8(cipher.cbc_decrypt(iv, data)).unwrap()
 }
 
-pub fn escape(text: &str) -> String {
+fn escape(text: &str) -> String {
     text.replace('\"', "\\\"")
         .replace('{', "\\{")
         .replace('}', "\\}")
@@ -85,8 +85,10 @@ impl Response {
 
     fn fix_unordered_list(answer: &mut NewBingResponseMessage) {
         answer.text.insert(0, '\n');
-        let re = Regex::new("^[-]").unwrap();
-        answer.text = re.replace(&answer.text, "•").to_string();
+        let re = Regex::new("\n[-]").unwrap();
+        answer.text = re.replace_all(&answer.text, "\n•").to_string();
+        let re = Regex::new("([.:?!])[-]").unwrap();
+        answer.text = re.replace_all(&answer.text, "${1}\n•").to_string();
         answer.text.remove(0);
     }
 

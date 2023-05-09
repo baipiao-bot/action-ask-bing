@@ -18,7 +18,12 @@ fn escape(text: &str) -> String {
     text.replace('\"', "\\\"")
         .replace('{', "\\{")
         .replace('}', "\\}")
+        .replace('(', "\\(")
+        .replace(')', "\\)")
+        .replace('>', "\\>")
+        .replace('<', "\\<")
         .replace('_', "\\_")
+        .replace('-', "\\-")
         .replace('.', "\\.")
 }
 #[derive(Debug, Serialize, Deserialize)]
@@ -85,10 +90,10 @@ impl Response {
 
     fn fix_unordered_list(answer: &mut NewBingResponseMessage) {
         answer.text.insert(0, '\n');
-        let re = Regex::new("\n[-]").unwrap();
-        answer.text = re.replace_all(&answer.text, "\n•").to_string();
-        let re = Regex::new("([.:?!])[-]").unwrap();
-        answer.text = re.replace_all(&answer.text, "${1}\n•").to_string();
+        let re = Regex::new(r"\n(\s*)[-]").unwrap();
+        answer.text = re.replace_all(&answer.text, "\n${1}•").to_string();
+        let re = Regex::new(r"([.:?!])(\s*)[-]").unwrap();
+        answer.text = re.replace_all(&answer.text, "${1}\n${2}•").to_string();
         answer.text.remove(0);
     }
 

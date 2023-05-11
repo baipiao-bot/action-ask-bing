@@ -15,7 +15,8 @@ fn decrypt(data: &[u8], secret: &[u8]) -> String {
 }
 
 fn escape(text: &str) -> String {
-    text.replace('\"', "\\\"")
+    let mut result = text
+        .replace('\"', "\\\"")
         .replace('{', "\\{")
         .replace('}', "\\}")
         .replace('(', "\\(")
@@ -25,6 +26,12 @@ fn escape(text: &str) -> String {
         .replace('_', "\\_")
         .replace('-', "\\-")
         .replace('.', "\\.")
+        .replace('!', "\\!");
+    let re = regex::Regex::new(r"\[([^]]+)\]\\\(([^)]+)\\\)");
+    if let Ok(re) = re {
+        result = re.replace_all(&result, "[$1]($2)").to_string();
+    }
+    result
 }
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Request {

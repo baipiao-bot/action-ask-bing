@@ -1,4 +1,4 @@
-use edge_gpt::{ChatSession, ConversationStyle, CookieInFile, NewBingResponseMessage};
+use edge_gpt::{ChatSession, ConversationStyle, NewBingResponseMessage};
 use ezio::prelude::*;
 use isahc::AsyncReadResponseExt;
 use libaes::Cipher;
@@ -149,26 +149,36 @@ async fn main() {
         if let Ok(corresponding_session) = corresponding_session {
             serde_json::from_str(&corresponding_session).unwrap()
         } else {
-            let cookie_str = env::var("COOKIE").unwrap();
-            let cookies: Vec<CookieInFile> = serde_json::from_str(&cookie_str).unwrap();
             let style = match request.style.as_str() {
                 "" | "creative" => ConversationStyle::Creative,
                 "balanced" => ConversationStyle::Balanced,
                 "precise" => ConversationStyle::Precise,
                 _ => panic!("style must be one of: creative, balanced, precise"),
             };
-            ChatSession::create(style, &cookies).await.unwrap()
+            let mut result = None;
+            for _ in 0..5 {
+                if let Ok(r) = ChatSession::create(style, &[]).await {
+                    result = Some(r);
+                    break;
+                }
+            }
+            result.unwrap()
         }
     } else {
-        let cookie_str = env::var("COOKIE").unwrap();
-        let cookies: Vec<CookieInFile> = serde_json::from_str(&cookie_str).unwrap();
         let style = match request.style.as_str() {
             "" | "creative" => ConversationStyle::Creative,
             "balanced" => ConversationStyle::Balanced,
             "precise" => ConversationStyle::Precise,
             _ => panic!("style must be one of: creative, balanced, precise"),
         };
-        ChatSession::create(style, &cookies).await.unwrap()
+        let mut result = None;
+        for _ in 0..5 {
+            if let Ok(r) = ChatSession::create(style, &[]).await {
+                result = Some(r);
+                break;
+            }
+        }
+        result.unwrap()
     };
 
     let (stop_typing_action_tx, mut stop_typing_action_rx) = broadcast::channel(1);

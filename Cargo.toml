@@ -19,3 +19,4 @@ redis = { version = "0.23.0", features = [
 tokio = { version = "1.28.0", features = ["macros", "rt-multi-thread", "time"] }
 isahc = { version = "1.7.2", features = ["json"] }
 regex = "1.8.1"
+rand = "0.8.5"

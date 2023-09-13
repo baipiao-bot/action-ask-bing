@@ -2,11 +2,15 @@ use edge_gpt::{ChatSession, ConversationStyle, NewBingResponseMessage};
 use ezio::prelude::*;
 use isahc::AsyncReadResponseExt;
 use libaes::Cipher;
+use rand::Rng;
 use redis::AsyncCommands;
 use regex::Regex;
 use serde::{Deserialize, Serialize};
 use std::{env, mem, time::Duration};
-use tokio::{sync::broadcast, time::interval};
+use tokio::{
+    sync::broadcast,
+    time::{interval, sleep},
+};
 fn decrypt(data: &[u8], secret: &[u8]) -> String {
     let key = &secret[0..32];
     let iv = &secret[32..(32 + 16)];
@@ -142,6 +146,7 @@ async fn main() {
     let request: Request = serde_json::from_str(&request_str).unwrap();
     let redis_client = redis::Client::open(redis_url).unwrap();
     let mut redis_connection = redis_client.get_async_connection().await.unwrap();
+    let mut rng = rand::thread_rng();
     let mut chat_session = if let Some(reply_to_message_id) = request.reply_to_message_id {
         let key = format!("{}-{}", request.chat_id, reply_to_message_id);
         let corresponding_session: Result<String, redis::RedisError> =
@@ -156,11 +161,12 @@ async fn main() {
                 _ => panic!("style must be one of: creative, balanced, precise"),
             };
             let mut result = None;
-            for _ in 0..5 {
+            for _ in 0..10 {
                 if let Ok(r) = ChatSession::create(style, &[]).await {
                     result = Some(r);
                     break;
                 }
+                sleep(Duration::from_millis(rng.gen_range(200..1000))).await;
             }
             result.unwrap()
         }
@@ -172,11 +178,12 @@ async fn main() {
             _ => panic!("style must be one of: creative, balanced, precise"),
         };
         let mut result = None;
-        for _ in 0..5 {
+        for _ in 0..10 {
             if let Ok(r) = ChatSession::create(style, &[]).await {
                 result = Some(r);
                 break;
             }
+            sleep(Duration::from_millis(rng.gen_range(200..1000))).await;
         }
         result.unwrap()
     };
